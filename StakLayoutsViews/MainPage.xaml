@@ -4,35 +4,25 @@
              x:Class="StakLayoutsViews.MainPage">
     <ScrollView>
 
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="9*"/>
-                <RowDefinition Height="1*"/>
-            </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="50*"/>
-                <ColumnDefinition Width="50*"/>
-            </Grid.ColumnDefinitions>
+        <Grid RowDefinitions =" 200,Auto,9*,1*" ColumnDefinitions = " 200, Auto, *, *" >
 
-            <BoxView Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" BackgroundColor="ForestGreen" HeightRequest="100" WidthRequest="100" />
-            <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="GreenYellow" HeightRequest="100" WidthRequest="100" />
-            <BoxView Grid.Row="2" Grid.Column="2" BackgroundColor="Gold" HeightRequest="100" WidthRequest="100" />
-            <BoxView Grid.Row="23" Grid.Column="3" BackgroundColor="MediumSeaGreen" HeightRequest="100" WidthRequest="100" />
-            <BoxView BackgroundColor="Aqua" />
+        <BoxView BackgroundColor="Aqua" />
+
+
+        <BoxView Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" BackgroundColor="ForestGreen" HeightRequest="100" WidthRequest="100" />
+        <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="GreenYellow" HeightRequest="100" WidthRequest="100" />
+        <BoxView Grid.Row="2" Grid.Column="2" BackgroundColor="Gold" HeightRequest="100" WidthRequest="100" />
+        <BoxView Grid.Row="23" Grid.Column="3" BackgroundColor="MediumSeaGreen" HeightRequest="100" WidthRequest="100" />
 
 
         </Grid>
 
 
-        
+
 
 
     </ScrollView>
 
-    
+
 </ContentPage>
