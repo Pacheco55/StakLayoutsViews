@@ -4,26 +4,29 @@
              x:Class="StakLayoutsViews.MainPage">
     <ScrollView>
 
-        <StackLayout Spacing="30" >
-            <BoxView Color="LawnGreen" HeightRequest="40" />
-            <BoxView Color="YellowGreen" HeightRequest="40" />
-            <BoxView Color="DimGray" HeightRequest="40" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" BackgroundColor="ForestGreen" HeightRequest="100" WidthRequest="100" />
+            <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="GreenYellow" HeightRequest="100" WidthRequest="100" />
+            <BoxView Grid.Row="2" Grid.Column="2" BackgroundColor="Gold" HeightRequest="100" WidthRequest="100" />
+            <BoxView Grid.Row="23" Grid.Column="3" BackgroundColor="MediumSeaGreen" HeightRequest="100" WidthRequest="100" />
+            <BoxView BackgroundColor="Aqua" />
 
 
-            <VerticalStackLayout Spacing="30">
-                <BoxView Color="PaleVioletRed" HeightRequest="40" />
-                <BoxView Color="RosyBrown" HeightRequest="40" />
-                <BoxView Color="DarkOliveGreen" HeightRequest="40"/>
-            </VerticalStackLayout>
-
-
-
-            <HorizontalStackLayout Spacing="30" >
-                <BoxView Color="White" HeightRequest="100" WidthRequest="40" />
-                <BoxView Color="Gold" HeightRequest="100" WidthRequest="40" />
-                <BoxView Color="LightSeaGreen" HeightRequest="100" WidthRequest="40" />
-            </HorizontalStackLayout>
-        </StackLayout>
+        </Grid>
 
 
         
