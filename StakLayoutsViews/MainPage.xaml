@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StakLayoutsViews.MainPage">
+    <ScrollView>
+
+        <StackLayout Spacing="30" >
+            <BoxView Color="LawnGreen" HeightRequest="40" />
+            <BoxView Color="YellowGreen" HeightRequest="40" />
+            <BoxView Color="DimGray" HeightRequest="40" />
+
+
+            <VerticalStackLayout Spacing="30">
+                <BoxView Color="PaleVioletRed" HeightRequest="40" />
+                <BoxView Color="RosyBrown" HeightRequest="40" />
+                <BoxView Color="DarkOliveGreen" HeightRequest="40"/>
+            </VerticalStackLayout>
+
+
+
+            <HorizontalStackLayout Spacing="30" >
+                <BoxView Color="White" HeightRequest="100" WidthRequest="40" />
+                <BoxView Color="Gold" HeightRequest="100" WidthRequest="40" />
+                <BoxView Color="LightSeaGreen" HeightRequest="100" WidthRequest="40" />
+            </HorizontalStackLayout>
+        </StackLayout>
+
+
+        
+
+
+    </ScrollView>
+
+    
+</ContentPage>
